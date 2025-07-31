@@ -53,10 +53,12 @@ body {
   border-radius: 0;
   background-color: black;
 }
-
+.mcet li a{
+    background-color: #00bfff;
+}
 /*home*/
 .home{
-    background: linear-gradient(120deg, #290027, #090021, #0d0038);
+    background: linear-gradient(120deg, #290027,  #090021,#070b23);
     color: white;
     text-align: center;
     min-height: 100vh;
@@ -75,10 +77,12 @@ body {
 /* btw */
 .btw{
     height: 10vh;
-    background: linear-gradient(180deg, #290027, #090021, #070b23);
+    background: linear-gradient(90deg,  #290027, #090021,#070b23);
+    filter: blur(60px);
 }
 /* abt */
 .abt {
+    
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
@@ -87,7 +91,8 @@ body {
     
 }
 .card {
-    background-color: #0c1231;
+    border: 0.25px solid white;
+    background-color: #070b23;
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -101,6 +106,9 @@ body {
 }
 .card h2 {
     margin-top: 0;
+}
+.card p{
+    font-weight: 100;
 }
 .tags {
     display: flex;
@@ -116,6 +124,9 @@ body {
     color: white;
     transition: 0.3s;
 }
-.tag::hover {
-    background-color: #1c2a69;
+.card :hover {
+    transition: 0.4s;
+    padding-left: 10px;
+    
+    
 }
